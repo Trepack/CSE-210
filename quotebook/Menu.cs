@@ -36,15 +36,15 @@ public class Menu
 
                     _board.AddQuote(new Quote(author,quote,new Source(source, sourceUrl)));
                     break;
-                case "S";
+                case "S":
                     _board.ShowQuotes();
                     break;
-                case "F";
+                case "F":
                     Console.Write("Please enter your author: ");
                     author = Console.ReadLine() ?? String.Empty;
                     _board.FindQuotesByAuthor(author);
                     break;
-                case "R";
+                case "R":
                     _board.GetRandomQoute();
                     break;
 
